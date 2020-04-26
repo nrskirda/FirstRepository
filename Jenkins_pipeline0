@@ -9,6 +9,9 @@ pipeline {
                     ls -lah
                 '''
             }
+            steps {
+                sh 'pwd"'
+            }
         }
     }
 }
