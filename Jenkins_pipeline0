@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Build0') {
             steps {
                 sh 'echo "Hello World"'
                 sh '''
@@ -9,6 +9,7 @@ pipeline {
                     ls -lah
                 '''
             }
+        stage('Build1') {
             steps {
                 sh 'pwd'
             }
